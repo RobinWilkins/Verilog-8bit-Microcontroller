@@ -15,6 +15,8 @@ module memoryROM
 	reg [7:0] memorySpace [0:255];
 
 initial begin
+
+				//test program 1
 //	memorySpace[0] = 8'h01; //load a rom
 //	memorySpace[1] = 8'h05; //value 5 for load
 //	
@@ -46,43 +48,46 @@ initial begin
 //	memorySpace[20] = 8'h04; //load b from ram
 //	memorySpace[21] = 8'h09; //ram address 9
 
-//	memorySpace[0] = 8'h01;
-//	memorySpace[1] = 8'b01111100;
+
+				//test program 2
+//	memorySpace[0] = 8'h01;				//load a from rom
+//	memorySpace[1] = 8'b01111100;		//value to load into a
 //	
-//	memorySpace[2] = 8'h0B;
+//	memorySpace[2] = 8'h0B;				//increment a
 //	
-//	memorySpace[3] = 8'h14;
-//	memorySpace[4] = 8'h02;
+//	memorySpace[3] = 8'h14;				//branch if not negative
+//	memorySpace[4] = 8'h02;				//address to branch to
 //	
-//	memorySpace[5] = 8'h02;
-//	memorySpace[6] = 8'b00000001;
+//	memorySpace[5] = 8'h02;				//load b from rom
+//	memorySpace[6] = 8'b00000001;		//value to load into b
 //	
 
-	memorySpace[0] = 8'h01;
-	memorySpace[1] = 8'b10101010;
-	memorySpace[2] = 8'h18;
+				//test program 3
+	memorySpace[0] = 8'h01;				//load a from rom
+	memorySpace[1] = 8'b10101010;		//value to load into a
+	memorySpace[2] = 8'h18;				//display contents of A on data output
 	
-	memorySpace[3] = 8'h0B;
-	memorySpace[4] = 8'h0B;
-	memorySpace[5] = 8'h0B;
+	memorySpace[3] = 8'h0B;				//increment a
+	memorySpace[4] = 8'h0B;				//increment a
+	memorySpace[5] = 8'h0B;				//increment a
 	
-	memorySpace[6] = 8'h18;
+	memorySpace[6] = 8'h18; 			//display contents of A on data output
 	
-	memorySpace[7] = 8'h02;
-	memorySpace[8] = 8'b00001111;
+	memorySpace[7] = 8'h02;				//load b from rom
+	memorySpace[8] = 8'b00001111;		//value to load into b
 	
-	memorySpace[9] = 8'h19;
+	memorySpace[9] = 8'h19;				//display contents of B on data output
 	
-	memorySpace[10] = 8'h0C;
-	memorySpace[11] = 8'h0C;
-	memorySpace[12] = 8'h0C;
+	memorySpace[10] = 8'h0C;			//increment b
+	memorySpace[11] = 8'h0C;			//increment b
+	memorySpace[12] = 8'h0C;			//increment b
 	
-	memorySpace[13] = 8'h19;
+	memorySpace[13] = 8'h19;			//display contents of B on data output
 	
-	memorySpace[14] = 8'h1A;
+	memorySpace[14] = 8'h1A;			//clear data output register
 	
-	memorySpace[15] = 8'h18;
-	memorySpace[16] = 8'h19;
+	memorySpace[15] = 8'h18;			//display contents of A on data output
+	memorySpace[16] = 8'h19;			//display contents of B on data output
 	
 end
 	

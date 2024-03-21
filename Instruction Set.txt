@@ -1,0 +1,36 @@
+Binary		Hex	Instruction
+00000000	0x00	No op
+
+00000001	0x01	Load A Immediate (from ROM)
+00000010	0x02	Load B Immediate (from ROM)
+00000011	0x03	Load A Direct (from RAM)
+00000100	0x04	Load B Direct (from RAM)
+00000101	0x05	Store A Direct (to RAM)
+00000110	0x06	Store B Direct (to RAM)
+		
+00000111	0x07	Add A + B and store in scratch A
+00001000	0x08	Sub A-B and store in scratch A
+00001001	0x09	AND A and B and store in A
+00001010	0x0A	OR A and B and store in A
+00001011	0x0B	Increment A and store in A
+00001100	0x0C	Increment B and store in B
+00001101	0x0D	Decrement A and store in A
+00001110	0x0E	Decrement B and store in B
+		
+00001111	0x0F	Branch always
+00010000	0x10	Branch if negative
+00010001	0x11	Branch if zero
+00010010	0x12	Branch if overflow
+00010011	0x13	Branch if carry
+		
+00010100	0x14	Branch if not negative
+00010101	0x15	Branch if not zero
+00010110	0x16	Branch if not overflow
+00010111	0x17	Branch if not carry
+		
+00011000	0x18	Output scratch A
+00011001	0x19	Output scratch B
+00011010	0x1A	Reset output register
+	
+
+
