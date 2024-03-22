@@ -7,7 +7,6 @@ Programs can be written by writing program data directly into memoryROM.v file, 
 ## To Do
 - [ ]  Add No Op instruction support
 - [ ]  Add more example code to memoryROM.v
-- [ ]  Add example 
 
 ## Further Work
 - [ ]  Add external inputs
